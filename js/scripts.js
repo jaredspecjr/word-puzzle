@@ -1,14 +1,13 @@
 $(document).ready(function() {
-  var answer = "hello whats going on";
-  var vowels = ['a', 'e', 'i', 'o', 'u'];
-  var puzzle = ""
-  for (var index = 0; index <= vowels.length; index += 1) {
-    if index.charAt(vowels){
-      voweltoreplace = index.replace(index, "-");
-    };
+  var sentence = "Hello world how are you?";
+  var vowels = ["a", "e", "i", "o", "u"]
+  for (index = 0; index < sentence.length; index ++) {
+    if (sentence[index] === "a" || sentence[index] === "e" || sentence[index] === "i" || sentence[index] === "o" || sentence[index] === "u") {
+      sentence = sentence.replace(sentence[index], "-");
+      console.log(sentence);
+    }
+
 
   }
-  for (var index = 0; index <= answer.charAt[index]; index += 1) {
-  }
-  alert("voweltoreplace");
+
 });
